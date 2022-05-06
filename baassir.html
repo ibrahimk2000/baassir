@@ -1,0 +1,336 @@
+
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background:#2e2759 ;
+  color: white;
+
+}
+
+.fa-twitter {
+  background: #2e2759;
+  color: white;
+}
+.fa-instagram {
+  background: #2e2759;
+  color: white;
+}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+* {
+  box-sizing: border-box;
+
+}
+body{
+background-color:white;
+font-family:Arial;
+text-align:justify;}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+background-color:#2e2759;
+
+}
+.header{
+color:#2e2759;
+text-align:left;
+}
+
+li.nav {
+  float: right;
+}
+
+li.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.nav a:hover:not(.active) {
+  background-color: darkslateblue;
+}
+
+.active {
+  background-color: #2e2759;
+}
+
+
+.brief{
+color:#2e2759;
+text-align:center;}
+
+
+
+.describe{
+color:#2e2759;
+text-align:center;
+
+font-size:20px;
+
+}
+footer{
+    background-color:#2e2759 ;
+    height: 100px;
+    margin-top: 40px;
+}
+
+footer p.footer-text{
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+
+</style>
+<title>HomePage</title>
+</head>
+<body>
+
+<ul class="nav">
+<li class="nav"><a href="about.html">About</a></li>
+  <li class="nav"><a href="contact.html">Contact</a></li>
+</ul>
+
+<table align="center" valign="center">
+<tr>
+<td width="400" align="left">
+<img src="logo.jpeg" width="150" height="100"/>
+</td>
+<td width="600">
+<h1 class="header">جمعية بعاصير الخيرية</h1></td>
+</tr>
+</table>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="first.jpg"style="width:100%; height:75%;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="second.jpeg" style="width:100%; height:75%;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="third.jpg" style="width:100%; height:75%;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="fourth.jpg" style="width:100%; height:75%;">
+</div>
+
+
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</br>
+</br></br>
+<table align="center" valign="center" width="80%" cellspacing="20px">
+<tr>
+<td colspan="2">
+<h1 class="brief">تأسيس الجمعية </h1></td>
+</tr>
+<tr>
+<td>
+<p class="describe"> 
+جمعية بعاصير الخيرية 
+علم و خبر ١١٨/ أد 
+تعديل ٢١٦/ أد 
+
+تأسست في الجمهورية اللبنانية جمعية تدعى " جمعية بعاصير الخيرية " غير سياسية و لا تتوخى الربح أعطيت هذه الجمعية العلم و الخبر بتاريخ ١٩/ ٨/ ٢٠٠٠ تحت الرقم ١١٨/أد وقد تم تعديله بتاريخ ١٩/٧/٢٠١٥ تحت الرقم ٢١٦/ أد بعد موافقة المراجع المعنية.
+</p></td >
+<td align="right"><img src="5.jpeg" style="width:400px;"></td>
+</tr>
+<tr>
+<td colspan="2">
+<h1 class="brief">أهداف الجمعية</h1></td></tr>
+<tr>
+<td colspan="2">
+<p class="describe">
+</p><p class="describe"> ١- الاهتمام بالنشاطات الإنسانية و الاجتماعية 
+                </p><p class="describe">٢- مساعدة المحتاجي 
+             </p><p class="describe">٣- القيام بالأعمال الخيرية 
+       </p><p class="describe">٤- إنشاء مستوصف صحي خيري</p>
+</td>
+
+<tr >
+<td colspan="2" >
+<h1 class="brief"> الأعمال التي تقوم بها الجمعية </h1></td></tr>
+<tr>
+<td colspan="2">
+<p class="describe">
+١-استشفاء، طبابة أدوية للعائلات الفقيرة والمحتاجين بما يقارب الخمس وعشرون مليون ليرة لبنانية سنويًا
+     </p><p class="describe"> ٢-تسجيل الأولاد في المدارس والمعاهد والجامعات بما يقارب العشرون مليون ليرة لبنانية سنويًا
+                      </p><p class="describe"> ٣-مساعدات إجتماعية بما يقارب العشرون مليون ليرة لبنانية سنويًا
+         </p><p class="describe">٤-نقل المرضى والوفيات من إلى المستشفيات مجانًا بواسطة سيارة إسعاف تملكها الجمعية
+                     </p><p class="describe">٥- تقديم كراسي لأهالي البلدة في المناسبات سعيدة كانت أم حزينة
+        </p><p class="describe">٦-تقوم الجمعية بندوات طبية تتعلق بجميع الأمراض لتوعية أهالي البلدة وكيفية الوقاية منها
+    </p><p class="describe">٧-تقوم الجمعية بندوات حول مكافحة المخدرات وسبل التخلص من تلك الآفة والسلبيات التي تحدثها</p>
+</td>
+
+
+<tr>
+<td colspan="2"><h1 class="brief">موارد الجمعية</h1></td></tr>
+<tr>
+<td colspan="2">
+<pre class="describe">
+١- اشتراكات الأعضاء
+٢- المساعدات الحكومية
+٣- التبرعات و الهبات و الوصايا
+و تُصرف أموال الجمعية في سبيل تحقيق أهدافها
+</pre></td>
+</tr>
+</table>
+<footer>
+<p class="footer-text">
+            Copyright &copy; 2022
+        </p>
+<p class="footer-text">
+<a href="#" class="fa fa-facebook"></a><br>
+<a href="#" onclick="setLanguage('en')">English</a> 
+<a href="#" onclick="setLanguage('fr')">French</a>
+</p>
+<script>
+  var language; 
+  function getLanguage() {
+  (localStorage.getItem('language') == null) ? setLanguage('en') : false;
+  $.ajax({ 
+  url:  '/language/' +  localStorage.getItem('language') + '.json', 
+  dataType: 'json', async: false, dataType: 'json', 
+  success: function (lang) { language = lang } });
+  }
+  
+  function setLanguage(lang) {
+  localStorage.setItem('language', lang);
+  }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+
+  $(document).ready(function(){
+  $('#div1').text(language.date);
+  });
+
+  </script>
+</footer>
+
+</body>
+</html>
